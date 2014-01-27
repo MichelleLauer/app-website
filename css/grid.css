@@ -10,6 +10,7 @@
   *letter-spacing: normal;
   *word-spacing: -0.43em;
   text-rendering: optimizespeed;
+  background-color:#FFC;
 
 }
 .opera-only :-o-prefocus,

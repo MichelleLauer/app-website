@@ -9,7 +9,9 @@ html{
 	margin:0;
 	padding:0;
 	font: normal 100%/1.2 Georgia,serif;
+	font-family: 'Carrois Gothic SC', sans-serif;
 }
+
 nav {
 	background-color:#666;
 	padding: .5em;
@@ -41,7 +43,8 @@ h1 {
 
 .flex-img1 {
 	display: block;
-	width: 100%;
+	width: 92%;
+	margin: 4%;
 /*	border-radius: 200px 200px 200px 200px;
 	-moz-border-radius: 200px 200px 200px 200px;
 	-webkit-border-radius: 200px 200px 200px 200px;
@@ -72,6 +75,119 @@ h1 {
   padding: 8px;
 }
 
+.carousel {
+	padding-bottom: 56.23%; /*Image aspect ratio: height / width * 100 */
+	position: relative;
+	margin: 6%;
+}
+
+.carousel-items img {
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.carousel-items [data-state="current"] {
+	z-index: 100;
+}
+
+.carousel-items [data-state="incoming"] {
+	z-index:101;
+}
+
+.carousel-buttons {
+	position: absolute;
+	z-index: 1000;
+}
+
+dialog {
+	border: 2px solid #000;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+dialog + .backdrop {
+	background-color: rgba(0,225,0,0.5);
+}
+
+#btn {
+	width: 70px;
+	height: 32px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 24px;
+	border:2px solid #000;
+	background-color: #000;
+	color: #fff;
+	padding: 0;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+#btn-open {
+	width: 70px;
+	height: 32px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 24px;
+	border:2px solid #000;
+	background-color: #000;
+	color: #fff;
+	padding: 0;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+#btn-close {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	text-align: center;
+	line-height: 24px;
+	border:2px solid #fff;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	padding: 0;
+	font-weight: bold;
+	cursor: pointer;
+	position:absolute;
+	top: -16px;
+	right:-16px;
+}
+
+.next {
+	width: 70px;
+	height: 32px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 24px;
+	border:0;
+	background-color:transparent;
+	color: #fff;
+	padding: 0;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+.previous {
+	width: 70px;
+	height: 32px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 24px;
+	border:0;
+	background-color: transparent;
+	color: #fff;
+	padding: 0;
+	font-weight: bold;
+	cursor: pointer;
+
+}
 
 @media only screen and (max-width: 38em) {
   .unit-s-hidden {
@@ -153,3 +269,9 @@ p {
     width: 75%;
   }
 }
+
+footer {
+	 background-color:#FFC;
+}
+	
+

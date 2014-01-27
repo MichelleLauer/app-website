@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>The Perfect Spot</title>
+<link href="css/dialog-polyfill.css" rel="stylesheet">
 <link href="css/general.css" rel="stylesheet">
 <link href="css/grid.css"rel="stylesheet">
+<href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
 </head>
 <header>
-<img src="img/appicon.png" width="100" height="100">
+<img src="img/App Icon [Rounded]/iTunesArtwork@2x.png" width="100" height="100">
 </header>
 
 
@@ -17,7 +19,7 @@
 	
 	<div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 ">
 		<div class="unit-spacer">
-			<img src="http://placehold.it/150x80" class="flex-img1" alt="">
+			<img src="img/ screen.png" class="flex-img1" alt="">
 		</div>
 	</div>
 	
@@ -26,13 +28,44 @@
 			<h1>The Perfect Spot</h1>
 			<p>The app that connects you to google maps to enable you to find the perfect parking spot. app could connect to google maps to enable you to find the perfect parking spot.<br></p>
 <button id="btn">Buy Now!</button>
+
+<button id="btn-open">Play Video</button>
+	
+	<dialog id="video">
+	<button id="btn-close">x</button>
+	<div id="video-placeholder"></div>
+	</dialog>
+
 		</div>
 	</div>
 
 </div>
 
+<div class="carousel">
+	<div class="carousel-items">
+		<img data-state="current" src="img/screen-1.png" alt"">
+		<img src="img/screen-0.png" alt"">
+		<img src="img/screen-1.png" alt"">
+		<img src="img/screen-2.png" alt"">
+		<img src="img/screen-3.png" alt"">
+	</div>
+	
+	<div class="carousel-buttons">
+		<button class="next">Next</button>
+		<button class="previous">Previous</button>
+	
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="js/dialog-polyfill.js"></script>
+<script src="js/main.js"></script>
 
 </body>
+
+
 <footer>
-<p>© The Perfect Spot 2014 // Michelle Lauer Design
+<p>© The Perfect Spot 2014 // Michelle Lauer Design</p>
+</footer>
+
 </html>
