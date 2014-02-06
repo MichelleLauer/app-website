@@ -33,6 +33,23 @@ nav a:selected {
 
 h1 {
 	color:#666;
+	font-weight: 300;
+}
+
+h2 {
+	color:#666;
+	text-align:center;
+	font-weight: 300;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+p {
+	text-align:center;
+	font-weight: 300;
+	padding: 1%;
 }
 
 .flex-img {
@@ -108,7 +125,7 @@ dialog {
 }
 
 dialog + .backdrop {
-	background-color: rgba(0,225,0,0.5);
+	background-color: rgba(0,0,0,0.5);
 }
 
 #btn {
@@ -220,6 +237,7 @@ h1 {
 p { 
 	font-size: 12px;
 }
+}
 
 @media only screen and (min-width: 38em) and (max-width: 60em) {
   .unit-m-hidden {
@@ -269,6 +287,38 @@ p {
     width: 75%;
   }
 }
+
+section {
+	padding: 3rem 0;
+}
+
+
+.logo-section {
+	background-color: #FFC;
+	
+}
+
+.logo {
+	width: 120px;
+	opacity: 0;
+	display: block;
+	margin: 0 auto;
+}
+
+.js-logo-animate {
+	-webkit-animation:logo-fade 4s linear 1 forwards;
+}
+
+@-webkit-keyframes logo-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
 
 footer {
 	 background-color:#FFC;
